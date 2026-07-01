@@ -94,8 +94,8 @@ graph TD
     classDef flow fill:#f9f9f9,stroke:#333,stroke-width:2px;
     class Submission Flow,Appeal Flow flow;
 
-
-    ## AI Tool Plan
+```
+## AI Tool Plan
 
 ### **M3 (Submission Endpoint + First Signal)**
 * **Spec Sections to Provide:** `1. Detection Signals` (Signal 1 only) + the `Architecture Diagram`.
