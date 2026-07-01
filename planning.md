@@ -49,6 +49,7 @@ Every heuristic has a blind spot. The system is anticipated to struggle with the
 
 The submission flow accepts text via the API gateway, processes it in parallel through the semantic and structural detection signals, calculates a combined confidence score, and returns a mapped transparency label while logging the entire transaction. The appeal flow allows creators to submit a contestation via a separate endpoint, which updates the original audit log entry's status to "under review" without overwriting the original scoring data.
 
+```mermaid
 graph TD
     %% Main Entities
     Client[Client Platform]
@@ -92,7 +93,7 @@ graph TD
     %% Styling
     style SubmissionFlow fill:#f9f9f9,stroke:#333,stroke-width:2px
     style AppealFlow fill:#f9f9f9,stroke:#333,stroke-width:2px
-    
+
 ## AI Tool Plan
 
 ### **M3 (Submission Endpoint + First Signal)**
