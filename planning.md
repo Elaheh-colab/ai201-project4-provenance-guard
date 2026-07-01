@@ -51,48 +51,48 @@ The submission flow accepts text via the API gateway, processes it in parallel t
 
 ```mermaid
 graph TD
-    %% Main Entities
-    Client[Client Platform]
-    DB[(Audit Log DB)]
+%% Main Entities
+Client[Client Platform]
+DB[(Audit Log DB)]
 
-    %% Submission Flow
-    subgraph Submission Flow
-        Gateway[API Gateway / Rate Limiter]
-        Pipeline[Detection Pipeline]
-        Sig1[Signal 1: LLM Semantic Groq]
-        Sig2[Signal 2: Stylometrics Python]
-        Score[Scoring Engine]
-        Label[Label Generator]
-    end
+%% Submission Flow
+subgraph Submission Flow
+  Gateway[API Gateway / Rate Limiter]
+  Pipeline[Detection Pipeline]
+  Sig1[Signal 1: LLM Semantic Groq]
+  Sig2[Signal 2: Stylometrics Python]
+  Score[Scoring Engine]
+  Label[Label Generator]
+end
 
-    %% Appeal Flow
-    subgraph Appeal Flow
-        AppealEndpoint[Appeals Handler]
-    end
+%% Appeal Flow
+subgraph Appeal Flow
+  AppealEndpoint[Appeals Handler]
+end
 
-    %% Submission Routing
-    Client -- "POST /submit (Raw Text)" --> Gateway
-    Gateway -- "(Raw Text)" --> Pipeline
-    Pipeline -- "(Raw Text)" --> Sig1
-    Pipeline -- "(Raw Text)" --> Sig2
-    
-    %% Scoring & Labeling
-    Sig1 -- "Semantic Score (0-1)" --> Score
-    Sig2 -- "Structural Score (0-1)" --> Score
-    Score -- "Combined Confidence (0-1)" --> Label
-    
-    %% Logging & Response
-    Label -- "Combined Score + Label Text" --> DB
-    Label -- "Response (Score + Label Text)" --> Client
+%% Submission Routing
+Client -- "POST /submit (Raw Text)" --> Gateway
+Gateway -- "(Raw Text)" --> Pipeline
+Pipeline -- "(Raw Text)" --> Sig1
+Pipeline -- "(Raw Text)" --> Sig2
 
-    %% Appeal Routing
-    Client -- "POST /appeal (ID + Reasoning)" --> AppealEndpoint
-    AppealEndpoint -- "Status: Under Review + Reasoning" --> DB
-    AppealEndpoint -- "Success Confirmation" --> Client
+%% Scoring & Labeling
+Sig1 -- "Semantic Score (0-1)" --> Score
+Sig2 -- "Structural Score (0-1)" --> Score
+Score -- "Combined Confidence (0-1)" --> Label
 
-    %% Styling
-    classDef flow fill:#f9f9f9,stroke:#333,stroke-width:2px;
-    class Submission Flow,Appeal Flow flow;
+%% Logging & Response
+Label -- "Combined Score + Label Text" --> DB
+Label -- "Response (Score + Label Text)" --> Client
+
+%% Appeal Routing
+Client -- "POST /appeal (ID + Reasoning)" --> AppealEndpoint
+AppealEndpoint -- "Status: Under Review + Reasoning" --> DB
+AppealEndpoint -- "Success Confirmation" --> Client
+
+%% Styling
+classDef flow fill:#f9f9f9,stroke:#333,stroke-width:2px;
+class Submission Flow,Appeal Flow flow;
 
 ```
 ## AI Tool Plan
