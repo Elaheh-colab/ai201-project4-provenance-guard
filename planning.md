@@ -93,6 +93,7 @@ graph TD
     %% Styling
     style SubmissionFlow fill:#f9f9f9,stroke:#333,stroke-width:2px
     style AppealFlow fill:#f9f9f9,stroke:#333,stroke-width:2px
+```
 
 ## AI Tool Plan
 
