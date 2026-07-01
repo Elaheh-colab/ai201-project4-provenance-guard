@@ -1,0 +1,147 @@
+[
+  {
+    "content_id": "a05e52c2-6708-4021-a91d-edcbcf8705c3",
+    "creator_id": "tester",
+    "timestamp": "2026-07-01T04:01:13.529994+00:00",
+    "attribution": "likely_ai",
+    "confidence": 0.73,
+    "signals": {
+      "llm_semantic": 0.85,
+      "stylometrics": 0.46
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "06ac5e3f-b003-489c-a6fb-31d4279e9cc6",
+    "creator_id": "tester",
+    "timestamp": "2026-07-01T04:01:30.321448+00:00",
+    "attribution": "uncertain",
+    "confidence": 0.53,
+    "signals": {
+      "llm_semantic": 0.62,
+      "stylometrics": 0.33
+    },
+    "status": "under_review",
+    "appeal_reasoning": "I wrote this myself from personal experience. I am a non-native English speaker and my writing style may appear more formal than typical."
+  },
+  {
+    "content_id": "bf031e22-f0c2-489c-a0ea-5d79e25f3907",
+    "creator_id": "tester",
+    "timestamp": "2026-07-01T04:01:42.103247+00:00",
+    "attribution": "likely_human",
+    "confidence": 0.38,
+    "signals": {
+      "llm_semantic": 0.35,
+      "stylometrics": 0.45
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "9e7d8409-7448-4f2c-b8f7-949cea558eb2",
+    "creator_id": "tester",
+    "timestamp": "2026-07-01T04:01:52.398019+00:00",
+    "attribution": "likely_human",
+    "confidence": 0.37,
+    "signals": {
+      "llm_semantic": 0.32,
+      "stylometrics": 0.5
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "daa973fa-63e9-438f-b004-1041dd72bb03",
+    "creator_id": "ratelimit-test",
+    "timestamp": "2026-07-01T04:03:00.483324+00:00",
+    "attribution": "likely_ai",
+    "confidence": 0.71,
+    "signals": {
+      "llm_semantic": 0.8,
+      "stylometrics": 0.5
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "e00e80c9-2f22-46c9-8fcb-ad9b656dd806",
+    "creator_id": "ratelimit-test",
+    "timestamp": "2026-07-01T04:03:00.772463+00:00",
+    "attribution": "likely_ai",
+    "confidence": 0.71,
+    "signals": {
+      "llm_semantic": 0.8,
+      "stylometrics": 0.5
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "ef47c39d-6bef-44e7-b285-c06ae6f6f788",
+    "creator_id": "ratelimit-test",
+    "timestamp": "2026-07-01T04:03:00.940309+00:00",
+    "attribution": "likely_ai",
+    "confidence": 0.71,
+    "signals": {
+      "llm_semantic": 0.8,
+      "stylometrics": 0.5
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "c81596cd-9510-412c-9013-734c1ba8eec5",
+    "creator_id": "ratelimit-test",
+    "timestamp": "2026-07-01T04:03:01.115912+00:00",
+    "attribution": "likely_ai",
+    "confidence": 0.71,
+    "signals": {
+      "llm_semantic": 0.8,
+      "stylometrics": 0.5
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "fb5e6425-25f1-44fd-97a6-92264f87bd16",
+    "creator_id": "ratelimit-test",
+    "timestamp": "2026-07-01T04:03:01.276684+00:00",
+    "attribution": "likely_ai",
+    "confidence": 0.71,
+    "signals": {
+      "llm_semantic": 0.8,
+      "stylometrics": 0.5
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "804129d0-1372-4954-b2c7-36edd1de0970",
+    "creator_id": "demo-user",
+    "timestamp": "2026-07-01T04:07:12.234089+00:00",
+    "attribution": "likely_human",
+    "confidence": 0.27,
+    "signals": {
+      "llm_semantic": 0.32,
+      "stylometrics": 0.14
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "2d0df283-34d0-42b7-b857-d1785cb41809",
+    "creator_id": "demo-user",
+    "timestamp": "2026-07-01T04:14:20.744974+00:00",
+    "attribution": "likely_human",
+    "confidence": 0.27,
+    "signals": {
+      "llm_semantic": 0.32,
+      "stylometrics": 0.14
+    },
+    "status": "processed"
+  },
+  {
+    "content_id": "cfdc0e19-826a-4a14-aaf0-2eaf647e04c8",
+    "creator_id": "demo-user",
+    "timestamp": "2026-07-01T04:17:50.101234+00:00",
+    "attribution": "uncertain",
+    "confidence": 0.53,
+    "signals": {
+      "llm_semantic": 0.62,
+      "stylometrics": 0.33
+    },
+    "status": "processed"
+  }
+]
