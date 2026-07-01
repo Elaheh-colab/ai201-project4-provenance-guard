@@ -96,7 +96,7 @@ graph TD
 ```
 
 ## AI Tool Plan
-
+This section dictates how parts of this specification will be used to prompt AI coding assistants (like Copilot, Claude, or ChatGPT) to generate implementation code.
 ### **M3 (Submission Endpoint + First Signal)**
 * **Spec Sections to Provide:** `1. Detection Signals` (Signal 1 only) + the `Architecture Diagram`.
 * **What to Ask For:** A basic API app skeleton (e.g., Flask or FastAPI) featuring a `POST /submit` endpoint. A separate function that takes a text string, calls the Groq API with a prompt designed to classify AI/Human, and parses the response into a float between 0.0 and 1.0. 
